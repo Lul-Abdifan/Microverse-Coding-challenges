@@ -1,0 +1,30 @@
+// A word is an anagram of another word if both use the same letters in the same quantity, but arranged differently.
+
+// For example:
+// friend and Finder are anagrams.
+// The Morse Code and Here come dots are anagrams as well.
+// Note: You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for anagram.
+
+// Submit a pull request to the main branch with your solution. Do not modify the tests. Once you have created a PR with passing tests, then you have successfully completed the exercise.
+
+
+  // write your code here
+  // put the charaters together without spaces
+  //Pseudocode:
+//1)step1:Change to one casing
+//2)step2:Removing non-alphanumeric character
+//3)step3)Sorting in ascending order
+//4)step4)Comparing each other
+//
+function anagram(str)
+{
+ let isAnagram1 = str[0].toLowerCase().match(/[a-z0-9]/g).sort().join("");
+   let isAnagram2 = str[1].toLowerCase().match(/[a-z0-9]/g).sort().join("");
+  if(isAnagram1==isAnagram2){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+  
