@@ -1,0 +1,28 @@
+// Repeat a String
+// Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number. For the purpose of this challenge, do not use the built-in .repeat() method.
+
+// Submit a pull request to the main branch with your solution. Do not modify the tests. Once you have created a PR with passing tests, then you have successfully completed the exercise.
+
+
+//Pseudocode:
+// 1. check if num is a psoitive number
+// 2. Intiliaze a var to hold the repeated string 
+// 2. Loop for the number of time we want the string to repeat. 
+// 3. Return the value of the initialized var as our output
+
+
+
+function repeatStringNumTimes (str, num) {
+  if(num <= 0){
+    return "";
+  } else
+  {
+      let output = "";
+    for(let i = 0; i < num; i++){
+      output+=str;
+    }
+    return output;
+}
+}
+let str = "Ethiopia";
+console.log(repeatStringNumTimes(str, 3))
